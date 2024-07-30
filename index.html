@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--문서의 정보 정의-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 웹에 표시할 내용 적기-->
+    <p>Use p tag to write down a paragraph.<br>
+        My first web page</p>
+    <p>줄바꿈을 하고 싶다면 br tag를 활용하자<br>
+        줄바꿈 완료!</p>   
+    <blockquote cite="https://learn.microsoft.com/ko-kr/cpp/mfc/html-basics?view=msvc-170">
+        <!--출처에서 인용한 문단 단위의 텍스트 작성시 활용, p 태그 내용 안에 포함 불가능-->
+        <p>
+            대부분의 브라우저에는 찾아보는 페이지의 HTML 원본을 검사하는 기능이 있습니다. <br>
+            원본을 보면 텍스트가 흩어져 있는 여러 HTML(하이퍼텍스트 태그 언어) 태그가 꺾쇠괄호로 둘러싸여 표시됩니다.
+        </p>
+    </blockquote>
+    <p>
+        microsoft에 따르면 <q cite="https://www.microsoft.com/ko-kr/">
+        매우 강력한 노트북으로 라이브 캡션 및 Cocreator와 같은 AI 기능을 활용할 수 있다.</q>
+    </p>
+    <p>
+        세일 기간을 맞이하여 온라인 강의 수강권을 할인된 금액(정가 <del>36,000원</del><ins>20,000원</ins>)에 판매합니다.<br>
+        공기의 원소 기호는 H<sub>2</sub>O<br>
+        4<sup>2</sup>은 16 입니다.
+    </p>
+    <div class="movie">
+        <p>영화 소개</p>
+        <p>영화를 소개하는 페이지입니다.</p>
+        <p>이번 영화의 <span>하이라이트</span> 장면은 바로 여기입니다.</p>
+    </div>
+    <div class="book">
+        <p>책 소개</p>
+        <p>책을 소개하는 페이지입니다.</p>
+    </div>
+    <h1>판매중인 과일</h1>
+    <ul> <!--순서가 정해지지 않은 리스트-->
+        <li>바나나</li>
+        <li>사과</li>
+        <li>복숭아</li>
+    </ul>
+    <h1>오늘 해야할 일</h1>
+    <ol> <!--순서가 정해져 있는 리스트-->
+        <li>오전: 아침먹기</li>
+        <li>점심: 점심먹기</li>
+        <li>저녁: 공부하기</li>
+    </ol>
+   <dl> <!--정의형 목록을 만들 때-->
+        <dt>HTML</dt>
+        <dd>HTML은 Hyper Text Markup Language의 약자이다. 웹의 구조를 설계한다.</dd>
+        <dt>CSS</dt>
+        <dd>CSS는 Cascading Style Sheets의 약자이다. 웹을 꾸미기 위한 목적으로 개발되었다.</dd>
+   </dl>
+   <a href="https://www.notion.so/cf1782b22b374cf785f8e518b0369ba4" target="_blank" title="김가윤의 노션 홈페이지">Kayun Kim의 notion</a>
+   <img src="img1.jpg" alt="포근한 방">
+   <a href="https://www.google.co.kr/?hl=ko" target="_blank">
+    <img src="google.png" alt="구글 로고">
+   </a>
+   <p><strong>이 시설은 <strong>관계자외 출입금지</strong>입니다.</strong></p>
+   <p>이 지점부터는 위험요인이 있으므로 <em>절대로, <em>어떤 경우에도</em></em> 지나가지 마세요.</p>
+
+   <form action="#">
+    <fieldset>
+        <legend>기본 정보</legend>
+        <p>
+            <label for="userid">아이디</label>
+            <input type="text" id="userid">
+        </p>
+        <p>
+            <label for="userpw">비밀번호</label>
+            <input type="text" id="userpw">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>추가 정보</legend>
+        <p>
+            <label for="age">나이</label>
+            <input type="number" id="age">
+        </p>
+        <p>
+            <label for="recommender">추천인</label>
+            <input type="text" id="recommender">
+        </p>
+    </fieldset>
+   </form>
+
+   <form action="#" method="post">
+    <fieldset>
+        <legend>블로그 글쓰기</legend>
+        <p>
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" value="제목을 입력하세요">
+        </p>
+        <p>
+            <label for="message">내용</label>
+            <textarea id="message" name="message">내용을 입력하세요</textarea>
+        </p>
+    </fieldset>
+   </form>
+   <input type="tel" placeholder="전화번호를 입력해주세요.">
+
+
+   <form action="#" method="post">
+    <fieldset>
+        <button type="button">
+            <img src="google G.png" alt="google 버튼">
+            Log in with Google
+        </button>
+    </fieldset>
+    <p>or</p>
+    <fieldset>
+        <label for="Username">
+            <input type="text" id="Username" placeholder="Username">
+        </label>
+        <label for="Userpw">
+            <input type="password" id="Userpw" placeholder="Password">
+        </label>
+        <button type="submit">LOGIN</button>
+        <a href="#">Forgot your password?</a>
+    </fieldset>
+   </form>
+
+   <!--위키백과 목차-->
+   <div>
+    <h1>목차</h1>
+   <ol>
+    <li>
+        <a href="#">역사</a>
+    </li>
+    <ol>
+        <li>
+            <a href="#">개발</a>
+        </li>
+        <li>
+            <a href="#">최초 규격</a>
+        </li>
+        <li>
+            <a href="#">표준 버전의 역사</a>
+        </li>
+        <ol>
+            <li>
+                <a href="#">HTML 버전 스케줄</a>
+            </li>
+            <li>
+                <a href="#">HTML 초안 버전 스케줄</a>
+            </li>
+            <li>
+                <a href="#">XHTML 버전</a>
+            </li>
+        </ol>
+    </ol>
+    <li>
+        <a href="#">마크업</a>
+    </li>
+    <ol>
+        <li>
+            <a href="#">HTML 요소</a>
+        </li>
+        <li>
+            <a href="#">데이터 형식</a>
+        </li>
+        <li>
+            <a href="#">문서 형식 선언</a>
+        </li>
+    </ol>
+   </ol>
+   </div>
+   
+</body>
+</html>
